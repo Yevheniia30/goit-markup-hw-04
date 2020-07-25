@@ -245,16 +245,16 @@ img {
   background-color: var(--secondary-bg-color);
 }
 .antenna::before {
-  background-image: url(../img/features/antenna1.svg);
+  background-image: url(../img/features/antenna.svg);
 }
 .clock::before {
-  background-image: url(../img/features/clock1.svg);
+  background-image: url(../img/features/clock.svg);
 }
 .diagram::before {
-  background-image: url(../img/features/diagram1.svg);
+  background-image: url(../img/features/diagram.svg);
 }
 .astronaut::before {
-  background-image: url(../img/features/astronaut1.svg);
+  background-image: url(../img/features/astronaut.svg);
 }
 .features .description {
   color: var(--secondary-text-color);
@@ -320,16 +320,11 @@ img {
   height: 44px;
   overflow: hidden;
 }
+.soc-icon {
+  width: 20px;
+  height: 20px;
+}
 .soc-netw .link {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  background-image: url(../img/soc-netw/fb.svg);
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: aqua;
-  border-radius: 50%;
 }
 .clients .item {
   /* display: block; */
