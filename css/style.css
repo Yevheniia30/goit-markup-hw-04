@@ -228,11 +228,33 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 .features .item {
   width: calc((100% - 90px) / 4);
 }
 .features .item:not(:last-child) {
   margin-right: 30px;
+}
+.features .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bg-color);
+}
+.antenna::before {
+  background-image: url(../img/features/antenna1.svg);
+}
+.clock::before {
+  background-image: url(../img/features/clock1.svg);
+}
+.diagram::before {
+  background-image: url(../img/features/diagram1.svg);
+}
+.astronaut::before {
+  background-image: url(../img/features/astronaut1.svg);
 }
 .features .description {
   color: var(--secondary-text-color);
@@ -297,6 +319,17 @@ img {
   width: 44px;
   height: 44px;
   overflow: hidden;
+}
+.soc-netw .link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../img/soc-netw/fb.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: aqua;
+  border-radius: 50%;
 }
 .clients .item {
   /* display: block; */
