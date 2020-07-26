@@ -309,26 +309,14 @@ img {
   text-align: center;
 }
 .team .soc-netw-list {
-  /* padding-left: 32px; */
-  /* padding-right: 32px; */
-
   justify-content: space-between;
 }
-.soc-netw {
-  width: 44px;
-  height: 44px;
-  overflow: hidden;
-}
+
 .soc-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
   /* fill: var(--icons-color); */
-}
-.soc-icon:hover,
-.soc-icon:focus {
-  /* background-color: var(--accent-color); */
-  /* fill: white; */
 }
 .soc-netw .link {
   justify-content: center;
