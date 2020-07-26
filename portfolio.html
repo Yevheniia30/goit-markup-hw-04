@@ -36,12 +36,27 @@
         <div class="contacts-container">
           <ul class="header-contacts list">
             <li class="item">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a
+                class="link"
+                href="mailto:info@devstudio.com"
+                aria-label="Отправить письмо"
+              >
+                <svg
+                  class="header-contacts-icon envelope"
+                  width="16"
+                  height="11"
+                >
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="link" href="tel:+380961111111" aria-label="Позвонить">
+                <svg class="header-contacts-icon" width="10" height="15">
+                  <use href="./img/sprite.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
         </div>
@@ -264,12 +279,17 @@
             г. Киев, пр-т Леси Украинки, 26
             <ul class="footer-contacts list">
               <li class="item">
-                <a class="link" href="mailto:info@example.com"
+                <a
+                  class="link"
+                  href="mailto:info@example.com"
+                  aria-label="Отправить письмо"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="link" href="tel:+380991111111" aria-label="Позвонить"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -277,29 +297,40 @@
         <div class="wrapper-join-in">
           <p class="join-in">присоединяйтесь</p>
           <ul class="soc-netw-list list">
-            <li class="soc-netw">
+            <li class="soc-netw footer-link">
               <a class="link" href="" aria-label="Сcылка на Instagram"
-                >Instagram</a
-              >
+                ><svg class="soc-icon-footer">
+                  <use href="./img/sprite.svg#icon-inst"></use></svg
+              ></a>
             </li>
-            <li class="soc-netw">
-              <a class="link" href="" aria-label="Сcылка на Twitter">Twitter</a>
+            <li class="soc-netw footer-link">
+              <a class="link" href="" aria-label="Сcылка на Twitter"
+                ><svg class="soc-icon-footer">
+                  <use href="./img/sprite.svg#icon-twitter"></use></svg
+              ></a>
             </li>
-            <li class="soc-netw">
+            <li class="soc-netw footer-link">
               <a class="link" href="" aria-label="Сcылка на Facebook"
-                >Facebook</a
-              >
+                ><svg class="soc-icon-footer">
+                  <use href="./img/sprite.svg#icon-fb"></use></svg
+              ></a>
             </li>
-            <li class="soc-netw">
+            <li class="soc-netw footer-link">
               <a class="link" href="" aria-label="Сcылка на Linkedin"
-                >Linkedin</a
-              >
+                ><svg class="soc-icon-footer">
+                  <use href="./img/sprite.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
         <div class="wrapper-subscribe">
           <p class="subscribe">Подпишитесь на рассылку</p>
-          <button type="button" class="form-btn">Подписаться</button>
+          <button type="button" class="form-btn">
+            Подписаться
+            <svg class="form-btn-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
