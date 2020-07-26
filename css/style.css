@@ -135,6 +135,9 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
+.envelope {
+  margin-top: 2px;
+}
 .link:hover,
 .link:focus {
   color: var(--accent-color);
@@ -149,7 +152,7 @@ img {
   margin: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  /* height: 600px; */
+  height: 600px;
   background-color: var(--primary-text-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
@@ -358,6 +361,7 @@ img {
 .clients .link:hover,
 .clients .link:focus {
   color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .clients-icon {
   fill: currentColor;
