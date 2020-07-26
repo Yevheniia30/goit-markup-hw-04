@@ -20,6 +20,8 @@
   --button-hover-color: #188ce8;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --skills-title-bg-color: rgba(47, 48, 58, 0.8);
+  --icons-color: #afb1b8;
+  --footer-link-bg-color: rgba(255, 255, 255, 0.1);
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 }
@@ -125,6 +127,9 @@ img {
 }
 .header-contacts .link {
   color: var(--secondary-text-color);
+}
+.header-contacts-icon {
+  fill: currentColor;
 }
 .link:hover,
 .link:focus {
@@ -235,27 +240,18 @@ img {
 .features .item:not(:last-child) {
   margin-right: 30px;
 }
-.features .item::before {
-  display: block;
-  content: '';
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+.features-bg {
   height: 120px;
+  padding: 25px 100px;
   margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
+
   background-color: var(--secondary-bg-color);
 }
-.antenna::before {
-  background-image: url(../img/features/antenna.svg);
-}
-.clock::before {
-  background-image: url(../img/features/clock.svg);
-}
-.diagram::before {
-  background-image: url(../img/features/diagram.svg);
-}
-.astronaut::before {
-  background-image: url(../img/features/astronaut.svg);
-}
+
 .features .description {
   color: var(--secondary-text-color);
   font-size: 14px;
@@ -323,8 +319,27 @@ img {
 .soc-icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
+  /* fill: var(--icons-color); */
+}
+.soc-icon:hover,
+.soc-icon:focus {
+  /* background-color: var(--accent-color); */
+  /* fill: white; */
 }
 .soc-netw .link {
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icons-color);
+}
+.soc-netw .link:hover,
+.soc-netw .link:focus {
+  color: var(--clear-white-color);
+  background-color: var(--accent-color);
 }
 .clients .item {
   /* display: block; */
@@ -339,11 +354,23 @@ img {
 .clients .item:not(:last-child) {
   margin-right: 30px;
 }
+.clients .link {
+  color: var(--icons-color);
+}
+.clients .link:hover,
+.clients .link:focus {
+  color: var(--accent-color);
+}
+.clients-icon {
+  fill: currentColor;
+  /* fill: var(--icons-color); */
+}
 
 /* footer css */
 .footer {
   background: var(--footer-background);
 }
+
 .footer-container {
   display: flex;
   align-items: baseline;
@@ -394,6 +421,15 @@ img {
 }
 .footer .soc-netw-list {
   justify-content: space-between;
+}
+.footer-link .link {
+  color: var(--clear-white-color);
+  background-color: var(--footer-link-bg-color);
+}
+.soc-icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 /* .wrapper-subscribe { 
   margin-bottom: 94px;
