@@ -126,9 +126,12 @@ img {
   letter-spacing: 0.02em;
 }
 .header-contacts .link {
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
 }
 .header-contacts-icon {
+  margin-right: 10px;
   fill: currentColor;
 }
 .link:hover,
