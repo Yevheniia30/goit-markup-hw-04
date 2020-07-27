@@ -133,9 +133,6 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
-.envelope {
-  margin-top: 2px;
-}
 .link:hover,
 .link:focus {
   color: var(--accent-color);
